@@ -7,9 +7,11 @@ import About from './About.js';
 function App(){
     return(
       <Router>
-        <Link to="/Home">Home</Link>
-        <Link to="/About">About</Link>
         <h2>Welcome To React Router</h2>
+        <div id="Link">
+        <Link to="/Home">Home</Link>&nbsp;&nbsp;
+        <Link to="/About">About</Link>
+        </div>
         <Routes>
           <Route extends path="/Home" element={<Home/>}/>
           <Route extends path="/About" element={<About/>}/>
